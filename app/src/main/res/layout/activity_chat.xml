@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/insert"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:text="insert"
+        android:gravity="center"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/delete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:text="delete"
+        android:gravity="center"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/insert"
+        app:layout_constraintRight_toLeftOf="@+id/update"
+        />
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:text="update"
+        android:gravity="center"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/delete"
+        app:layout_constraintRight_toLeftOf="@+id/query"
+        />
+
+    <TextView
+        android:id="@+id/query"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:text="query"
+        android:gravity="center"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@id/update"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+</android.support.constraint.ConstraintLayout>
